@@ -78,7 +78,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-@media screen and (max-width: 37.5rem) {
+@media screen and (max-width: 50rem) {
   body {
     background-color: var(--violet);
     background-image: url(images/bg-mobile.svg);
@@ -124,9 +124,20 @@ select {
     justify-content: center;
     margin-top: 2rem;
   }
+
+  .socials {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .social-icon {
+    width: 50px;
+    border: white 2px;
+  }
 }
 
-@media screen and (min-width: 37.6rem) {
+@media screen and (min-width: 50.1rem) {
   body {
     background-color: var(--violet);
     background-image: url(images/bg-desktop.svg);
@@ -167,5 +178,22 @@ select {
     display: flex;
     justify-content: left;
     margin-top: 2rem;
+  }
+  .socials {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  }
+
+  .social-icon {
+    width: 50px;
+    border: white 2px;
+  }
+  .image:hover {
+    background-color: var(--violet);
+  }
+  .social-icon:hover {
+    background-color: var(--violet);
   }
 }
